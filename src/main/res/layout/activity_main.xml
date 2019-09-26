@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3DAD8"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/score5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/harmfulApps"
+        app:layout_constraintTop_toTopOf="@+id/developerMenu" />
+
+    <TextView
+        android:id="@+id/score7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/harmfulApps"
+        app:layout_constraintTop_toTopOf="@+id/cts" />
+
+    <TextView
+        android:id="@+id/sysParam"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="System Parameters"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Score"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/harmfulApps"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/ScreenLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Screen Lock"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sysParam" />
+
+    <CheckBox
+        android:id="@+id/OS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="OS Version"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScreenLock" />
+
+    <CheckBox
+        android:id="@+id/sources"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Verify Apps Feature"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OS" />
+
+    <CheckBox
+        android:id="@+id/harmfulApps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Potentially Harmful Apps"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sources" />
+
+    <CheckBox
+        android:id="@+id/developerMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Developer Option Menu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/harmfulApps" />
+
+    <CheckBox
+        android:id="@+id/basic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Basic Integrity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/developerMenu" />
+
+    <CheckBox
+        android:id="@+id/cts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Compatibility Test"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basic" />
+
+    <TextView
+        android:id="@+id/score3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/harmfulApps"
+        app:layout_constraintTop_toTopOf="@+id/sources" />
+
+    <TextView
+        android:id="@+id/score4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/harmfulApps"
+        app:layout_constraintTop_toTopOf="@+id/harmfulApps" />
+
+    <TextView
+        android:id="@+id/score6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/harmfulApps"
+        app:layout_constraintTop_toTopOf="@+id/basic" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/harmfulApps"
+        app:layout_constraintTop_toTopOf="@+id/ScreenLock" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toEndOf="@+id/harmfulApps"
+        app:layout_constraintTop_toTopOf="@+id/OS" />
+
+    <CheckBox
+        android:id="@+id/all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Complete Check"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cts" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="375dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all" />
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="#3090BB"
+        android:text="Scan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <Button
+        android:id="@+id/detail2"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#182B92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/score2"
+        app:layout_constraintTop_toBottomOf="@+id/detail1" />
+
+    <Button
+        android:id="@+id/detail7"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#182B92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/score7"
+        app:layout_constraintTop_toBottomOf="@+id/detail6" />
+
+    <Button
+        android:id="@+id/detail6"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#182B92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/score6"
+        app:layout_constraintTop_toBottomOf="@+id/detail5" />
+
+    <Button
+        android:id="@+id/detail5"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#182B92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/score5"
+        app:layout_constraintTop_toBottomOf="@+id/detail4" />
+
+    <Button
+        android:id="@+id/detail4"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#182B92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/score4"
+        app:layout_constraintTop_toBottomOf="@+id/detail3" />
+
+    <Button
+        android:id="@+id/detail3"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#182B92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/score3"
+        app:layout_constraintTop_toBottomOf="@+id/detail2" />
+
+    <Button
+        android:id="@+id/detail1"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        android:text="Details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#182B92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/score1"
+        app:layout_constraintTop_toTopOf="@+id/ScreenLock" />
+
+    <Button
+        android:id="@+id/reset"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="71dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:background="#3090BB"
+        android:text="Reset"
+        android:textColor="#FBFBFB"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/score7"
+        app:layout_constraintTop_toBottomOf="@+id/detail7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
